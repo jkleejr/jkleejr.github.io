@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="title" content="john lee jr">
+        <meta name="description" content="web">
+        <style type="text/css">
+            h1 {
+                position: relative
+            }
+
+            @-webkit-keyframes swing {
+                0% {
+                    -webkit-transform: translate3d(0,0,100px);
+                    transform: translate3d(0,0,100px)
+                }
+
+                100% {
+                    -webkit-transform: translate3d(15px,0,100px);
+                    transform: translate3d(15px,0,100px)
+                }
+            }
+
+            @keyframes swing {
+                0% {
+                    -webkit-transform: translate3d(0,0,100px);
+                    -ms-transform: translate3d(0,0,100px);
+                    transform: translate3d(0,0,100px)
+                }
+
+                100% {
+                    -webkit-transform: translate3d(15px,0,100px);
+                    transform: translate3d(15px,0,100px)
+                }
+            }
+
+            .swing {
+                -webkit-animation-name: swing;
+                animation-name: swing;
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-direction: alternate-reverse;
+                animation-direction: alternate-reverse;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite
+            }
+
+            body {
+                padding: 20px
+            }
+
+            body,h1,h2 {
+                font-family: Courier,monospace;
+                font-size: 16px;
+                font-weight: 400
+            }
+
+            h1 {
+                left: 0
+            }
+
+            strong {
+                font-weight: 700
+            }
+
+            ul {
+                list-style: none;
+                padding: 0
+            }
+
+            main {
+                border: 1px solid #000;
+                padding: 0 15px;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d
+            }
+
+            p,h2,ul {
+                line-height: 1.5;
+                -webkit-transform: translateZ(100px);
+                transform: translateZ(100px)
+            }
+
+            .unreleased {
+                opacity: 0.5;
+                filter: blur(2px)
+            }
+
+            @media only screen and (min-width: 45em) {
+                body {
+                    padding-bottom:10em;
+                }
+
+                main {
+                    width: 550px;
+                    position: absolute;
+                    top: 5em;
+                    left: 25%
+                }
+            .soundcloud-container {
+                max-width: 50%;
+                margin: 1 auto;
+                }
+            nav {
+                position: absolute;
+                top: 0;
+                right: 20px;
+                font-family: Courier, monospace;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+        }   
+        </style>
+        <title>john lee jr</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="dsgn.html">DSGN</a>
+        </nav>
+
+        <main>
+            <h1 class="swing">
+                <strong>john lee jr</strong>'s discography
+            </h1>
+            <div class="soundcloud-container">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/455082334&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+            <h2>
+                <strong>music</strong>
+                as cozy jk
+            </h2>
+            <ul>
+                <li>
+                    2023 <a target="_blank" href="https://soundcloud.com/user-455082334/mid-summer"> cozy jk</a>
+                    soundcloud
+                </li>
+                <li>
+                    2022 <a target="_blank" href="https://soundcloud.com/jkw129/tracks"> jawn</a>
+                    soundcloud
+                </li>
+                <li>
+                    2021 <a target="_blank" href="https://drive.google.com/drive/folders/1fhzTkje2MmbQsGjzYl7SlzpxLY781Cm5?usp=sharing"> jawn</a>
+                    archived tracks
+                </li>
+
+            </ul>
+            <p>
+                also <a target="_blank" href="https://op1.fun/users/idkjawn"> sound design for op1 </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://cozyjk.bandcamp.com/">bandcamp</a> ,
+                <a target="_blank" href="https://twitter.com/jkw129">twitter</a>
+            </p>
+        </main>
+        
+        <script>
+            var t = document.getElementsByTagName('main')[0];
+            document.documentElement.onmousemove = function(e) {
+                t.style.webkitTransform = t.style.transform = 'rotate3d(10, 180, -6, ' + e.pageX / -20 + 'deg)';
+            }
+            ;
+        </script>
+    </body>
+</html>
+
